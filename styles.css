@@ -1,0 +1,145 @@
+/* Master styles */
+body {
+  margin: 0px;
+  background-color: black;
+  color: #eee;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+
+
+/* Nav styles */
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 38px;
+  border: 2px;
+  background-color: gray;
+}  
+
+.left-side {
+  display: flex;
+}
+
+
+.nav-wrapper > .left-side > div {
+  margin-right: 20px;
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+  height: 22px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+  color: #eee;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+  border-bottom: 1px solid white;
+}
+
+.nav-link-wrapper a:hover {
+color: grey;
+}
+
+/* About */
+
+.about-wrapper {
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.about-wrapper p {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+
+.typed-text {
+  font-weight: normal;
+}
+
+
+.cursor {
+  display: inline-block;
+  width: 3px;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  animation: blink 1s infinite;
+}
+
+.cursor.typing {
+animation: none;
+}
+
+@keyframes blink {
+  0% { background-color: #ccc;}
+  49% { background-color: #ccc;}
+  50% {background-color: transparent;}
+  99% {background-color: transparent;}
+  100% {background-color: #ccc;}
+}
+
+/* Portfolio Style */
+.portfolio-items-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-item-wrapper {
+  position: relative;
+
+}
+
+.portfolio-img-background {
+  height: 350px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* about info */
+
+.about-info-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+
+}
+
+
+.about-info-img {
+  flex: 1 100%;
+  order: 1;
+  overflow: hidden;
+}
+
+.about-info-img img {
+  border: 0px;
+  border-radius: 20%;
+  padding: 3em;
+  min-width: 40px;
+  max-width: 200px;
+  height: auto;
+}
+
+.about-info {
+  flex: 1;
+  order: 2;
+  
+}
